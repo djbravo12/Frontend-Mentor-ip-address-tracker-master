@@ -22,7 +22,6 @@ body {
   background-image: url(./images/pattern-bg.png);
   background-repeat: no-repeat;
   background-position: 54%, 50%;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,15 +49,14 @@ form {
   border-radius: 10px 0 0 10px;
   border: none;
   font-size: 18px;
-
 }
 
 .IPinput:focus {
   outline: none;
 }
 
-.IPinput::placeholder{
-    font-size: 18px;
+.IPinput::placeholder {
+  font-size: 18px;
 }
 
 .sbmtButton {
@@ -106,8 +104,11 @@ form {
 
 #map {
   height: 100%;
-  /* width: 100%; */
   z-index: 0;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 @media (width >= 60.5rem) {
@@ -133,9 +134,9 @@ form {
   }
 
   .IP-details-box-divs + .IP-details-box-divs {
-    /* background-color: red; */
     border-left: 1px solid var(--Dark-Gray);
   }
+  
   .IP-details-box-divs-spans {
     width: min-content;
     font-size: 1.5rem;
